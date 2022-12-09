@@ -1,6 +1,6 @@
 # Summary of project
 
-Building a REST CRUD API with hibernate
+Building a REST CRUD API with hibernate native
 
 ## What is JPA
 

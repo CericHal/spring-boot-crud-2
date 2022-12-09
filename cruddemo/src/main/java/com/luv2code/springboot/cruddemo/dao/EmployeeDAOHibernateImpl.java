@@ -58,13 +58,16 @@ public class EmployeeDAOHibernateImpl implements EmployeeDAO{
         return theEmployee;
     }
 
+    /* (non-Javadoc)
+     * @see com.luv2code.springboot.cruddemo.dao.EmployeeDAO#save(com.luv2code.springboot.cruddemo.entity.Employee)
+     */
     @Override
-    public void save(Employee theeEmployee) {
+    public void save(Employee theEmployee) {
         // get the current hibernate session
         Session currentSession = entityManager.unwrap(Session.class);
 
         // get the employee
-        currentSession.saveOrUpdate(theeEmployee);
+        currentSession.saveOrUpdate(theEmployee);
         
     }
 
